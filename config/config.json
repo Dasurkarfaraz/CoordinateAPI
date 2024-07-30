@@ -1,0 +1,6 @@
+{
+    "screenshot_path": "screenshots/screenshot.png",
+    "output_folder": "output",
+    "output_file": "coordinates.txt",
+    "search_text": "example text"
+}

@@ -1,0 +1,1 @@
+Coordinates of 'OFF': [(206, 538)]
