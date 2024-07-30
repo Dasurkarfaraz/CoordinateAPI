@@ -30,3 +30,4 @@ def extract_coordinates():
         return jsonify({"coordinates": coordinates})
     else:
         return jsonify({"error": "Text not found in the image."}), 404
+    
