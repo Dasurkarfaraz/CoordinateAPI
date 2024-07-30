@@ -6,7 +6,11 @@ import pytesseract
 from src import ocr
 
 app = Flask(__name__)
+TESSERACT_CMD = os.path.join(os.path.dirname(__file__), 'tesseract', 'tesseract')
 
+@app.before_first_request
+def setup_pytesseract():
+    pytesseract.pytesseract.tesseract_cmd = TESSERACT_CMD
 @app.route('/extract-coordinates', methods=['POST'])
 def extract_coordinates():
     if 'image' not in request.files or 'text' not in request.form:

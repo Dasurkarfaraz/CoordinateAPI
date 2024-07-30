@@ -2,7 +2,7 @@ from PIL import Image
 import pytesseract
 
 # Specify the path to the Tesseract executable
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Update this path as needed
+# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Update this path as needed
 
 def extract_text_coordinates(image_path, search_text):
     image = Image.open(image_path)
